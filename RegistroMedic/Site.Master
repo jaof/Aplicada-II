@@ -7,18 +7,32 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    		<link  rel="stylesheet" type="text/scss" href="Margenes.scss" media="screen">
 </head>
 <body>
-    <h1>Encabezado de la Web Page</h1>
     <form id="form1" runat="server">
-    <div>
+    <h1 class="cabecera">
+        
+		<div id= "menu"aria-orientation="horizontal">
+		<ol style="margin-left: 3px" > 
+				<li> Inicio</li>
+				<li> Registro</li>
+				<li> Consulta</li>
+		</ol>
+		</div>
+        </h1>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
+      
+		
+
+	
+
+          </asp:ContentPlaceHolder>
         
-        </asp:ContentPlaceHolder>
-    </div>
+   
     </form>
-         <h1>Pie de la Web Page</h1>
+         <h2 >Pie de la Web Page</h2>
 
 </body>
 </html>

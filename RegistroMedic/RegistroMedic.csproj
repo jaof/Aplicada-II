@@ -87,7 +87,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Margenes.scss" />
+    <Content Include="Margenes.css" />
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>

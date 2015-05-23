@@ -13,7 +13,7 @@ namespace RegistroMedic.BLL.DAL
     public class Conexion
     {
 
-        SqlConnection sqlConexion = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=RegistroPacientes;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+        SqlConnection sqlConexion = new SqlConnection(@"workstation id=RegistroPacientes.mssql.somee.com;packet size=4096;user id=joaf;pwd=Corei5ariel017;data source=RegistroPacientes.mssql.somee.com;persist security info=False;initial catalog=RegistroPacientes");
         /// <summary>
         /// para ejecutar todos los codigos
         /// </summary>

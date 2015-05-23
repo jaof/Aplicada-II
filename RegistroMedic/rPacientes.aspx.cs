@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace RegistroMedic
 {
     public partial class Web : System.Web.UI.Page
     {
         BLL.Pacientes pac = new BLL.Pacientes();
         protected void Page_Load(object sender, EventArgs e)
+
 
         {
             if (!IsPostBack)
@@ -59,6 +59,7 @@ namespace RegistroMedic
                 if (pac.Insertar())
                 {
                     Response.Write("Guardo Exitosamente");
+                  
 
                 }
                 else

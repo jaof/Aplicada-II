@@ -4,65 +4,86 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <!-- begin meta -->
-    <meta charset="utf-8">
-    <meta name="description" content="This is a simple and elegant navigation menu built with HTML5 and CSS3.">
-    <meta name="keywords" content="HTML5, CSS3, navigation, navigation menu, gray">
-    <meta name="author" content="Ixtendo">
-	<!-- end meta -->
-	
-	<!-- begin CSS -->
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-	<link href="css/html5-reset.css" type="text/css" rel="stylesheet">
+   
+
     <link rel="stylesheet" href="Margenes.css"/>
-	<!-- end CSS -->
 	
-	<!-- begin JS -->
-	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script> 
-	<script src="js/modernizr-2.0.6.min.js" type="text/javascript"></script> 
-	<!-- end JS -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<title>http://www.rmedic.somee.com/</title>
+		<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="iconic.css" media="screen" rel="stylesheet" type="text/css" />
+		<script src="prefix-free.js"></script>
 	
-    <title>HTML5/CSS3 Gray Navigation Menu</title>
+  
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
    
     <style type="text/css">
-        .auto-style1 {
-            height: 94px;
+        .auto-style4 {
+            width: 958px;
         }
-        .auto-style2 {
-            width: 600px;
+        .auto-style5 {
+            left: 0px;
+            top: -1px;
         }
-    </style>
+        </style>
    
 </head>
 <body>
     <form id="form1" runat="server">
-       
-        <!-- begin container -->
-<div id="container" style="margin: 240px auto 0;" class="auto-style2">
-
-	<!-- begin navigation -->
-	<nav id="navigation">
-		<ul>
-			<li><a href="#">INICIO</a></li>
-			<li><a href="rPacientes.aspx">REGISTRO</a></li>
-			<li><a href="Consulta.aspx">CONSULTA</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-	<!-- end navigation -->
+      
+  <div id="cabecera">
+      <img src="img/CabeceraP.png">
+  </div>
+     
+        <div id="menu1">   
+    
 	
-</div>
-<!-- end container -->
+	<nav margin:"left" class="auto-style5">
+		<ul class="menu">
+			<li><a href="#"><span class="iconic home"></span> Inicio</a></li>
+			<li><a href="#"><span class="iconic plus-alt"></span> Registros</a>
+				<ul>
+					<li><a href="rPacientes.aspx">Pacientes</a></li>
+					<li><a href="rSistemaFisiologico.aspx">Sistema Fisiologico</a></li>
+                    <li><a href="rRevisionXSistemas.aspx">Revision de Paciente</a></li>
+
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic magnifying-glass"></span> Consultas</a>
+				<ul>
+					<li><a href="Consulta.aspx">Pacientes</a></li>
+					<li><a href="fSistemasFisiologicos.aspx">Sistema Fisiologico</a></li>
+					<li><a href="fRevisionXSistemas.aspx">Revision de Paciente</a></li>
+		
+				</ul>
+			</li>
+			<li><a href="#"><span class="iconic map-pin"></span> Products</a>
+			</li>
+			<li><a href="#"><span class="iconic mail"></span> Contact</a>
+				<ul>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Directions</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+	</nav>
+	</div>
+     
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            <div id="contenido"> <p class="auto-style4"><br><br><br><br><br><br><br><br><br><br><br>
+					      </br></br></br></br></br></br></br></br></br></br></br>
+					</p</div>
+           
         </asp:ContentPlaceHolder>
 
+         <div id="pie"></div>
 
     </form>
-    <h1 class="auto-style1"></h1>
+   
 
 </body>
 </html>

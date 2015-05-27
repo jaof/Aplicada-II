@@ -22,6 +22,15 @@ namespace RegistroMedic {
         protected global::System.Web.UI.WebControls.TextBox TextBoxIdPaciente;
         
         /// <summary>
+        /// btnConsulta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnConsulta;
+        
+        /// <summary>
         /// TextBoxNombre control.
         /// </summary>
         /// <remarks>

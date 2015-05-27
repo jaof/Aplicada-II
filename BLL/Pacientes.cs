@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data;
-
-namespace RegistroMedic.BLL
+using DAL;
+namespace BLL
 {
     public class Pacientes
     {
@@ -20,7 +20,7 @@ namespace RegistroMedic.BLL
     public int Sexo { get; set; }
     public string Ocupacion﻿ { get; set; }
 
-    public  DAL.Conexion ConexiondB =new DAL.Conexion();
+    public Conexion ConexiondB =new Conexion();
         
         public Pacientes() 
         {
@@ -85,12 +85,12 @@ namespace RegistroMedic.BLL
         
         public static DataTable Lista(String Campos, String FiltroWhere)
         {
-            DAL.Conexion c=new DAL.Conexion();
+            Conexion c=new Conexion();
             return c.BuscarDb("Select "+Campos+" from "+FiltroWhere);
         }
         public static DataTable ListarF(String fecha1, String fecha2,String Tipo)
         {
-            DAL.Conexion ConexionDB = new DAL.Conexion();
+            Conexion ConexionDB = new Conexion();
             return ConexionDB.BuscarDb("select * from Pacientes where "+Tipo+" BETWEEN  ('" + fecha1 + "') and ('" + fecha2 + "') ");
         }
 

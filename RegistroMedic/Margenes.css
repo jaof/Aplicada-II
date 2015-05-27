@@ -1,33 +1,11 @@
-﻿body{
-font-size: 1em;
-
-}
+﻿
 .masgrande{
 	font-size:4em;
 }
 .exe{
 	font-size:1ex;
 }
-.cabecera{
-	 width:100%;
-	 height:200px;
-	 background:rgb(0, 38, 255);
-}
-.pie{
-	 width:50%;
-	 height:100px;
-	 background:rgb(0, 38, 255);
-}
-#cuerpo{
-	width:8000px;
-}
-#menu{
-        position:inherit;
-		width:50%;
-		height:25px;
-		background:rgb(76, 255, 0);
-}
-#menu ol li{
+#menu1 ol li{
 	list-style: none;
 	display:inline;
 	margin:0px 100px 0px  0px;
@@ -42,7 +20,38 @@ font-size: 1em;
 	border-width:2px;
 	border-style:dashed;
 }
-h1{
-    color:rgb(21, 48, 211);
-    background:rgb(21, 48, 211);
+
+#principal{
+	width:800px;
+	margin:0 auto;
+	background-color:#fff;
+}
+#cabecera{
+	width:100%;
+	height:150px;
+	border:1px solid #ccc;
+}
+#menu1{
+	
+    height:100%;
+	border:1px solid #ccc;
+    margin:0 auto;
+	
+}
+#contenido{
+	width:645px;
+	float:left;
+	border:1px solid #ccc;
+}
+#pie{
+	width:100%;
+	height:150px;
+	border:1px solid #ccc;
+	clear:both;
+    background-color:#5bbfd8;
+}
+#cabecera img{
+
+    width:100%;
+	height:150px;
 }

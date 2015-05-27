@@ -7,13 +7,13 @@ using System.Data.SqlClient;
 using System.Data;
 
 
-namespace RegistroMedic.BLL.DAL
+namespace DAL
 {
 
     public class Conexion
     {
 
-        SqlConnection sqlConexion = new SqlConnection(@"workstation id=RegistroPacientes.mssql.somee.com;packet size=4096;user id=joaf;pwd=Corei5ariel017;data source=RegistroPacientes.mssql.somee.com;persist security info=False;initial catalog=RegistroPacientes");
+        SqlConnection sqlConexion = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=PacientesDB;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
         /// <summary>
         /// para ejecutar todos los codigos
         /// </summary>

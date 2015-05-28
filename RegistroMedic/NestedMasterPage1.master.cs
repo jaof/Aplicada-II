@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace RegistroMedic
 {
-    public partial class WebForm3 : System.Web.UI.Page
+    public partial class NestedMasterPage1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

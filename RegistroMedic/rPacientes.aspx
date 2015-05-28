@@ -51,6 +51,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link rel="stylesheet" href="Bootstrap\css\bootstrap.css">
+    <link rel ="stylesheet" href="..\Scripts\toastr.min.js"></link>
         <table>
         </table>
     

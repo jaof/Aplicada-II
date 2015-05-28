@@ -74,9 +74,10 @@ namespace RegistroMedic
                     if (pac.Insertar())
                     {
                         Response.Write("Guardo Exitosamente");
-    
 
 
+                        Page.ClientScript.RegisterStartupScript(this.GetType(),
+      "toastr_message", "toastr.error('There was an error', 'Error')", true);﻿
 
                     }
                     else

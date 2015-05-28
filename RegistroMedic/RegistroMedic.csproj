@@ -68,35 +68,28 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\npm.js" />
     <Content Include="Consulta.aspx" />
-    <Content Include="content\toastr.css" />
-    <Content Include="content\toastr.min.css" />
     <Content Include="default.aspx" />
     <Content Include="fonts\iconic\iconic_stroke.svg" />
     <Content Include="fRevisionXSistemas.aspx" />
     <Content Include="fSistemasFisiologicos.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="iconic.css" />
     <Content Include="img\CabeceraP.png" />
     <Content Include="img\denim.png" />
     <Content Include="img\light_alu.png" />
     <Content Include="img\s.jpg" />
-    <Content Include="prefix-free.js" />
+    <Content Include="Scripts\prefix-free.js" />
     <Content Include="rPacientes.aspx" />
     <Content Include="packages.config" />
-    <Content Include="content\toastr.scss" />
-    <Content Include="content\toastr.less" />
     <Content Include="rSistemaFisiologico.aspx" />
-    <Content Include="style.css" />
-    <Content Include="Loging.aspx" />
     <Content Include="fonts\iconic\iconic_stroke.eot" />
     <Content Include="fonts\iconic\iconic_stroke.otf" />
     <Content Include="fonts\iconic\iconic_stroke.ttf" />
-    <Content Include="WebForm3.aspx" />
-    <None Include="Scripts\jquery-1.6.3-vsdoc.js" />
-    <Content Include="Scripts\jquery-1.6.3.js" />
+    <Content Include="Bootstrap\css\style.css" />
     <Content Include="Scripts\jquery-1.6.3.min.js" />
-    <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="rRevisionXSistemas.aspx" />
+    <Content Include="Log.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consulta.aspx.cs">
@@ -127,6 +120,16 @@
     <Compile Include="fSistemasFisiologicos.aspx.designer.cs">
       <DependentUpon>fSistemasFisiologicos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPage1.master.designer.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rSistemaFisiologico.aspx.cs">
       <DependentUpon>rSistemaFisiologico.aspx</DependentUpon>
@@ -156,23 +159,16 @@
     <Compile Include="rRevisionXSistemas.aspx.designer.cs">
       <DependentUpon>rRevisionXSistemas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Loging.aspx.cs">
-      <DependentUpon>Loging.aspx</DependentUpon>
+    <Compile Include="Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Loging.aspx.designer.cs">
-      <DependentUpon>Loging.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
+    <Compile Include="Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Margenes.css" />
+    <Content Include="Bootstrap\css\Margenes.css" />
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +181,7 @@
     <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="NestedMasterPage1.master" />
     <None Include="Properties\PublishProfiles\jaof.pubxml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>

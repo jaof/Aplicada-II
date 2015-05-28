@@ -42,7 +42,7 @@
 	
 	<nav margin:"left" class="auto-style5">
 		<ul class="menu">
-			<li><a href="#"><span class="iconic home"></span> Inicio</a></li>
+			<li><a href="default.aspx"><span class="iconic home"></span> Inicio</a></li>
 			<li><a href="#"><span class="iconic plus-alt"></span> Registros</a>
 				<ul>
 					<li><a href="rPacientes.aspx">Pacientes</a></li>

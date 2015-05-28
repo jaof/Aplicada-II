@@ -86,7 +86,7 @@
     <Content Include="content\toastr.less" />
     <Content Include="rSistemaFisiologico.aspx" />
     <Content Include="style.css" />
-    <Content Include="WebForm2.aspx" />
+    <Content Include="Loging.aspx" />
     <Content Include="fonts\iconic\iconic_stroke.eot" />
     <Content Include="fonts\iconic\iconic_stroke.otf" />
     <Content Include="fonts\iconic\iconic_stroke.ttf" />
@@ -156,12 +156,12 @@
     <Compile Include="rRevisionXSistemas.aspx.designer.cs">
       <DependentUpon>rRevisionXSistemas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="Loging.aspx.cs">
+      <DependentUpon>Loging.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="Loging.aspx.designer.cs">
+      <DependentUpon>Loging.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>

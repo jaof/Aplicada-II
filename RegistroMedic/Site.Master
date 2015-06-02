@@ -6,14 +6,12 @@
 <head runat="server">
    
 
-    <link rel="stylesheet" href="../Bootstrap/css/Margenes.css"/>
-	
-      
+        <link rel="stylesheet" href="../Bootstrap/css/Margenes.css"/>
 		<meta charset="utf-8">
 		<title>http://www.rmedic.somee.com/</title>
 		<link href="Bootstrap/css/style.css"  media="screen" rel="stylesheet" type="text/css" />
 		<link href="iconic.css"  media="screen" rel="stylesheet" type="text/css" />
-		<script src="../Scripts/prefix-free.js"></script>
+		
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
    
@@ -32,11 +30,12 @@
     <form id="form1" runat="server">
       
   <div id="cabecera">
-      <img src="img/CabeceraP.png">
-  </div>
+      <img src="img/CabeceraP.png"></div>
      
-        <div id="menu1">   
-            
+        <div id="menu1">  
+             <asp:Label ID="Label1" runat="server" Text="Usuario"></asp:Label>
+                <asp:TextBox ID="TbxUsuario" runat="server" Enabled="False"></asp:TextBox>
+            <asp:Button ID="BtnSalir" runat="server" Text="Cerrar Seccion" OnClick="BtnSalir_Click" />
 	
 	<nav margin:"left" class="auto-style5">
 		<ul class="menu">
@@ -78,12 +77,9 @@
            
         </asp:ContentPlaceHolder>
 
-
-
          <div id="pie"></div>
 
     </form>
-   
 
 </body>
 </html>

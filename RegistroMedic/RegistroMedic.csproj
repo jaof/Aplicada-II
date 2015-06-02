@@ -63,6 +63,7 @@
     <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Bootstrap\css\bootstrap.css" />
     <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\css\styleLog.css" />
     <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
@@ -75,9 +76,9 @@
     <Content Include="Global.asax" />
     <Content Include="iconic.css" />
     <Content Include="img\CabeceraP.png" />
-    <Content Include="img\denim.png" />
     <Content Include="img\light_alu.png" />
     <Content Include="img\s.jpg" />
+    <Content Include="LogOn.aspx" />
     <Content Include="Scripts\prefix-free.js" />
     <Content Include="rPacientes.aspx" />
     <Content Include="packages.config" />
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LogOn.aspx.cs">
+      <DependentUpon>LogOn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOn.aspx.designer.cs">
+      <DependentUpon>LogOn.aspx</DependentUpon>
     </Compile>
     <Compile Include="NestedMasterPage1.master.cs">
       <DependentUpon>NestedMasterPage1.master</DependentUpon>

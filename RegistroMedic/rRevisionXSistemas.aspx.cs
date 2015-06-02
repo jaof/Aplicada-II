@@ -17,16 +17,19 @@ namespace RegistroMedic
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            DdlPaciente.DataSource = Pacientes.Lista("Nombre,IdPaciente","Pacientes");
-            DdlPaciente.DataValueField= "IdPaciente";
-            DdlPaciente.DataTextField= "Nombre";
-            DdlPaciente.DataBind();
+            if (!IsPostBack)
+            {
+                DdlPaciente.DataSource = Pacientes.Lista("Nombre,IdPaciente", "Pacientes");
+                DdlPaciente.DataValueField = "IdPaciente";
+                DdlPaciente.DataTextField = "Nombre";
+                DdlPaciente.DataBind();
 
-            DdlSistema.DataSource = Sistemas.Lista("Sistema,IdSistemaFisio", "SistemasFisio");
-            DdlSistema.DataValueField = "IdSistemaFisio";
-            DdlSistema.DataTextField = "Sistema";
-            DdlSistema.DataBind();
-
+                DdlSistema.DataSource = Sistemas.Lista("Sistema,IdSistemaFisio", "SistemasFisio");
+                DdlSistema.DataValueField = "IdSistemaFisio";
+                DdlSistema.DataTextField = "Sistema";
+                DdlSistema.DataBind();
+                Session.Abandon();
+            }  
            
         }
 
